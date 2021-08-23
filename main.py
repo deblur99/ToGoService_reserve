@@ -13,6 +13,7 @@ def get_web_driver():
 # On the step 1 page, click "Galaxy Z Flip 3" banner and enter that step 2 page
 def go_to_step_2(driver, desired):
     links = driver.find_elements_by_css_selector(".btn > img")
+    print(links)
 
     # find a link about desired item among the button elements
     for link in links:
